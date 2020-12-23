@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 use App\Http\Controllers\SliderController;
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DashboardController;
 
 $prefixAdmin = config('zvn.url.prefix_admin');
 $prefixSlider = config('zvn.url.prefix_slider');
@@ -25,12 +25,16 @@ Route::get('/', function () {
 Route::group([
     'prefix' => $prefixAdmin,
 ], function () use ($prefixSlider) {
-    Route::get('/user', function () {
-        return '/admin/user';
+
+    Route::get('/', function () {
+        return view('admin.main');
     });
 
-    Route::get('/category', function () {
-        return '/admin/category';
+    //====================SLIDER===============//
+    Route::group([
+        'prefix' => 'dashboard',
+    ], function () {
+        Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     });
 
     //====================SLIDER===============//
@@ -43,7 +47,7 @@ Route::group([
 
         Route::get('delete/{id}', [SliderController::class, 'delete'])->where('id', '[0-9]+')->name('slider/delete');
 
-        Route::get('change-status-{status}/{id}', [SliderController::class, 'status'])->where('id', '[0-9]+')->name('status');
+        Route::get('change-status-{status}/{id}', [SliderController::class, 'status'])->where('id', '[0-9]+')->name('slider/status');
     });
 
 });
