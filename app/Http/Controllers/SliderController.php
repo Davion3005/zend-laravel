@@ -5,26 +5,28 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
-use Illuminate\Support\Facades\DB;
+use App\Models\Slider;
 
 
 class SliderController extends Controller
 {
     private $pathViewController = 'admin.slider.';
     private $controllerName = 'slider';
+    private $model;
 
     public function __construct()
     {
+        $this->model = new Slider();
         View::share('controllerName', $this->controllerName);
     }
 
     public function index()
     {
-        $tables = DB::select('SHOW TABLES');
-        foreach ($tables as $table) {
-            print_r($table);
-        }
-        return view($this->pathViewController . 'index');
+        $items = $this->model->listItems(null, ['task' => 'admin-list-items']);
+
+        return view($this->pathViewController . 'index', [
+            'items' => $items,
+        ]);
     }
 
     public function form($id = null)
