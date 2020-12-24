@@ -20,12 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f328b7f6-81df-4924-8ad5-7d8a2f0e27f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helpers/Template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/category/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/slider/delete.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/slider/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/slider/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/slider/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/templates/list_empty.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/templates/pagination.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/templates/x_title.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pagination/pagination_backend.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/zend-laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zend-laravel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/zvn.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/zvn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/category/delete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/category/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/category/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/list.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,20 +175,22 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/public/theme/admin/css/font-awesome/css" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/templates" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/admin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/admin/templates" />
+      <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public/images/slider" />
       <recent name="$PROJECT_DIR$/resources/views/admin/slider" />
-      <recent name="$PROJECT_DIR$/resources/views/admin/elements" />
-      <recent name="$PROJECT_DIR$/public/theme/admin/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/paginaiton" />
+      <recent name="$PROJECT_DIR$/resources/views/admin/pages" />
+      <recent name="$PROJECT_DIR$/resources/views/admin" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
@@ -192,7 +207,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -233,6 +248,10 @@
       <screen x="-1882" y="23" width="1882" height="1057" />
     </state>
     <state x="-1235" y="268" key="NewPhpClassDialog/0.23.1920.1057/-1882.23.1882.1057@-1882.23.1882.1057" timestamp="1608626672814" />
+    <state x="782" y="478" key="NewPhpFileDialog" timestamp="1608779151584">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="782" y="478" key="NewPhpFileDialog/0.23.1920.1057/-1882.23.1882.1057@0.23.1920.1057" timestamp="1608779151584" />
     <state x="759" y="177" key="RollbackChangesDialog" timestamp="1608692771668">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -241,15 +260,15 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="760" y="336" key="chooseDestDirectoryDialog/0.23.1920.1057/-1882.23.1882.1057@0.23.1920.1057" timestamp="1608707936076" />
-    <state x="666" y="290" width="584" height="522" key="find.popup" timestamp="1608698836174">
+    <state x="666" y="290" width="584" height="522" key="find.popup" timestamp="1608775191865">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="666" y="290" width="584" height="522" key="find.popup/0.23.1920.1057/-1882.23.1882.1057@0.23.1920.1057" timestamp="1608698836174" />
-    <state x="491" y="218" width="670" height="561" key="search.everywhere.popup" timestamp="1608742435246">
-      <screen x="40" y="23" width="1400" height="877" />
+    <state x="666" y="290" width="584" height="522" key="find.popup/0.23.1920.1057/-1882.23.1882.1057@0.23.1920.1057" timestamp="1608775191865" />
+    <state x="618" y="258" width="684" height="676" key="search.everywhere.popup" timestamp="1608807315846">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="-1276" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1882.23.1882.1057@-1882.23.1882.1057" timestamp="1608632049645" />
-    <state x="618" y="258" width="684" height="676" key="search.everywhere.popup/0.23.1920.1057/-1882.23.1882.1057@0.23.1920.1057" timestamp="1608714574447" />
+    <state x="618" y="258" width="684" height="676" key="search.everywhere.popup/0.23.1920.1057/-1882.23.1882.1057@0.23.1920.1057" timestamp="1608807315846" />
     <state x="491" y="218" width="670" height="561" key="search.everywhere.popup/40.23.1400.877/1440.-157.1920.1057@40.23.1400.877" timestamp="1608742435246" />
   </component>
   <component name="XDebuggerManager">

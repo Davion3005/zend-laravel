@@ -10,22 +10,26 @@ use App\Models\Slider;
 
 class SliderController extends Controller
 {
-    private $pathViewController = 'admin.slider.';
+    private $pathViewController = 'admin.pages.slider.';
     private $controllerName = 'slider';
     private $model;
+    private $params = [];
 
     public function __construct()
     {
+        $this->params['pagination']['itemsPerPage'] = 1;
         $this->model = new Slider();
         View::share('controllerName', $this->controllerName);
     }
 
     public function index()
     {
-        $items = $this->model->listItems(null, ['task' => 'admin-list-items']);
+        $items = $this->model->listItems($this->params, ['task' => 'admin-list-items']);
+        $countByStatus = $this->model->countItems($this->params, ['task' => 'admin-count-items']);
 
         return view($this->pathViewController . 'index', [
             'items' => $items,
+            'countByStatus' => $countByStatus,
         ]);
     }
 
