@@ -20,25 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f328b7f6-81df-4924-8ad5-7d8a2f0e27f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Helpers/Template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/category/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/slider/delete.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/slider/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/slider/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/slider/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/templates/list_empty.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/templates/pagination.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/templates/x_title.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pagination/pagination_backend.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/Template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Slider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/zvn.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/zvn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/dashboard/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/category/delete.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/category/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/category/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/list.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/theme/admin/js/my-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/admin/js/my-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/elements/script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/elements/script.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/slider/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/slider/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +164,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/public/theme/admin/css/font-awesome/css" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -207,7 +196,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -221,11 +210,20 @@
       <workItem from="1608623955927" duration="10081000" />
       <workItem from="1608689239130" duration="16202000" />
       <workItem from="1608737614069" duration="3944000" />
+      <workItem from="1608860977490" duration="14365000" />
     </task>
+    <task id="LOCAL-00001" summary="add">
+      <created>1608807603216</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608807603216</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -238,6 +236,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="678" y="356" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608697171762">
@@ -264,11 +266,11 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="666" y="290" width="584" height="522" key="find.popup/0.23.1920.1057/-1882.23.1882.1057@0.23.1920.1057" timestamp="1608775191865" />
-    <state x="618" y="258" width="684" height="676" key="search.everywhere.popup" timestamp="1608807315846">
+    <state x="618" y="258" width="684" height="676" key="search.everywhere.popup" timestamp="1608886762228">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="-1276" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1882.23.1882.1057@-1882.23.1882.1057" timestamp="1608632049645" />
-    <state x="618" y="258" width="684" height="676" key="search.everywhere.popup/0.23.1920.1057/-1882.23.1882.1057@0.23.1920.1057" timestamp="1608807315846" />
+    <state x="618" y="258" width="684" height="676" key="search.everywhere.popup/0.23.1920.1057/-1882.23.1882.1057@0.23.1920.1057" timestamp="1608886762228" />
     <state x="491" y="218" width="670" height="561" key="search.everywhere.popup/40.23.1400.877/1440.-157.1920.1057@40.23.1400.877" timestamp="1608742435246" />
   </component>
   <component name="XDebuggerManager">

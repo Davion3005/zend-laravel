@@ -13,3 +13,5 @@
 <!-- Custom Theme Scripts -->
 <script src="{{ asset('theme/admin/js/custom.min.js')}}"></script>
 <script src="https://use.fontawesome.com/dd97423ab9.js"></script>
+<script src="{{ asset('theme/admin/js/my-js.js')}}"></script>
+
