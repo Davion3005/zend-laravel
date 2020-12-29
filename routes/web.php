@@ -45,6 +45,8 @@ Route::group([
 
        Route::get('form/{id?}', [SliderController::class, 'form'])->where('id', '[0-9]+')->name('slider/form');
 
+        Route::post('save', [SliderController::class, 'save'])->name('slider/save');
+
         Route::get('delete/{id}', [SliderController::class, 'delete'])->where('id', '[0-9]+')->name('slider/delete');
 
         Route::get('change-status-{status}/{id}', [SliderController::class, 'status'])->where('id', '[0-9]+')->name('slider/status');

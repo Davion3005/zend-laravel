@@ -11,7 +11,7 @@
                 <h3>Danh sách User</h3>
             </div>
             <div class="zvn-add-new pull-right">
-                <a href="/form" class="btn btn-success"><i
+                <a href="{{ route($controllerName . '/form') }}" class="btn btn-success"><i
                         class="fa fa-plus-circle"></i> Thêm mới</a>
             </div>
         </div>
@@ -28,6 +28,7 @@
                 </div>
             </div>
         </div>
+        @include('admin.templates.zvn_notify')
         <!--box-lists-->
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">

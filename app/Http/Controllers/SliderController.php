@@ -3,9 +3,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SliderRequest;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
-use App\Models\Slider;
 
 
 class SliderController extends Controller
@@ -17,7 +18,7 @@ class SliderController extends Controller
 
     public function __construct()
     {
-        $this->params['pagination']['itemsPerPage'] = 1;
+        $this->params['pagination']['itemsPerPage'] = 5;
         $this->model = new Slider();
         View::share('controllerName', $this->controllerName);
     }
@@ -38,23 +39,51 @@ class SliderController extends Controller
         ]);
     }
 
-    public function form($id = null)
+    public function form(Request $request)
     {
-        $title = 'title';
+        $item = null;
+        if ($request->id != null) {
+            $params['id'] = $request->id;
+            $item = $this->model->getItem($params, ['task' => 'get-item']);
+        }
+
         return view($this->pathViewController . 'form', [
-            'id' => $id,
-            'title' => $title,
-            ]);
+            'item' => $item,
+        ]);
     }
 
-    public function status($status, $id, Request $request)
+    public function status(Request $request)
     {
-        echo $request->route('status');
-        return redirect()->route('slider');
+        $params['currentStatus'] = $request->status;
+        $params['id'] = $request->id;
+        $this->model->saveItem($params, ['task' => 'change-status']);
+
+        return redirect()->route('slider')->with('status', 'Slider updated successfully');
     }
 
-    public function delete()
+    public function delete(Request $request)
     {
-        return view($this->pathViewController . 'delete');
+        $params['id'] = $request->id;
+        $this->model->deleteItem($params, ['task' => 'delete-item']);
+
+        return redirect()->route($this->controllerName)->with('status', 'Slider has been deleted successfully');
+    }
+
+    public function save(SliderRequest $request)
+    {
+        if ($request->method() == 'POST') {
+            $params = $request->all();
+
+            $task = 'add-item';
+            $notify = 'Add item successfully';
+
+            if ($params['id'] !== null) {
+                $task = 'edit-item';
+                $notify = 'Edit item successfully';
+            }
+            $this->model->saveItem($params, ['task' => $task]);
+
+            return redirect()->route($this->controllerName)->with('status', $notify);
+        }
     }
 }

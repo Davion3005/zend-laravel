@@ -14,8 +14,8 @@ return [
         'status' => [
             'default' => ['name' => 'Undefined', 'class' => 'btn-danger'],
             'all' => ['name' => 'All', 'class' => 'btn-primary'],
-            'active' => ['name' => 'Active', 'class' => 'btn-success'],
-            'inactive' => ['name' => 'Inactive', 'class' => 'btn-info'],
+            'active' => ['name' => 'Active', 'class' => 'btn-success', 'value' => 'active'],
+            'inactive' => ['name' => 'Inactive', 'class' => 'btn-info', 'value' => 'inactive'],
         ],
         'search' => [
             'all' => ['name' => 'Search by All'],
@@ -37,7 +37,7 @@ return [
                 'route-name' => '/form',
             ],
             'delete' => [
-                'class' => 'btn-danger',
+                'class' => 'btn-danger btn-delete',
                 'title' => 'Delete',
                 'icon' => 'fa-trash',
                 'route-name' => '/delete',
@@ -59,6 +59,9 @@ return [
             'default' => ['edit', 'delete'],
             'slider' => ['edit', 'delete'],
         ],
+        'status' => [
+            'slider' => ['active', 'inactive'],
+        ]
     ],
 
 ];

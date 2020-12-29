@@ -44,4 +44,31 @@ class Slider extends Model
 
         return $result;
     }
+
+    public function saveItem($params = null, $options = null)
+    {
+        if ($options['task'] == 'change-status') {
+            $status = $params['currentStatus'] == 'active' ? 'inactive' : 'active';
+            self::where('id', $params['id'])->update(['status' => $status]);
+        }
+
+        if ($options['task'] == 'add-item') {
+            DB::table($this->table)->insert();
+        }
+    }
+
+    public function deleteItem($params = null, $options = null)
+    {
+        if ($options['task'] == 'delete-item') {
+            self::where('id', $params['id'])->delete();
+        }
+    }
+
+    public function getItem($params = null, $options = null)
+    {
+        if ($options['task'] == 'get-item'){
+            $result = self::where('id', $params['id'])->first();
+        }
+        return $result;
+    }
 }

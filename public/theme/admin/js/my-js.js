@@ -1,6 +1,6 @@
 $(document).ready(function () {
     let $btnSearch      = $("button#btn-search");
-    let $btnClearSearch = $("btn-clear-search");
+    let $btnDelete      = $(".btn-delete");
 
     let $inputSearchField = $("input[name = search_field]");
     let $inputSearchValue = $("input[name = search_value]");
@@ -21,5 +21,11 @@ $(document).ready(function () {
         let search_value = $inputSearchValue.val();
 
         window.location.href = pathname + '?' + 'search_field=' + search_field + '&search_value=' + search_value;
+    });
+
+    $btnDelete.click(function () {
+        if (!confirm('Would you like to delete this item?')) {
+            return false;
+        }
     });
 })
