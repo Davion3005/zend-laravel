@@ -35,6 +35,11 @@ return [
             'root' => storage_path('app'),
         ],
 
+        'zvn_storage_image' => [
+            'driver' => 'local',
+            'root' => public_path('images'),
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
